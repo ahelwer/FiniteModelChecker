@@ -8,13 +8,17 @@ This is a [finite model checker](https://en.wikipedia.org/wiki/Model_checking) f
 
 Forked from [Azure/RingMaster](https://github.com/Azure/RingMaster/tree/master/src/Tools/FiniteModelChecker); I wrote this tool at Microsoft to test some particularly tricky serialization code for reducing memory usage.
 
-## How To Build
+NuGet package: https://www.nuget.org/packages/FiniteModelChecker/
+
+## Build & Test
 
 1. Install [.NET Core](https://www.microsoft.com/net/download)
 2. Clone the repo
-3. Run `dotnet build` from the root of the repo
+3. To build, run `dotnet build` from the root of the repo
+4. To test, run `dotnet test` from the FiniteModelChecker.Tests directory
+5. To package, run `dotnet pack -c release`
 
-## How To Use
+## Usage
 
 In order to model-check your code, you must define the following:
 * The set of initial states
