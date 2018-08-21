@@ -10,6 +10,8 @@ Forked from [Azure/RingMaster](https://github.com/Azure/RingMaster/tree/master/s
 
 NuGet package: https://www.nuget.org/packages/FiniteModelChecker/
 
+The assemblies distributed in the NuGet package are compiled against .NET Standard 2.0, which means your project must be using .NET Framework 4.6.1+ or .NET Core 2.0+ to reference them (see [here](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support) for more details).
+
 ## Build & Test
 
 1. Install [.NET Core](https://www.microsoft.com/net/download)
