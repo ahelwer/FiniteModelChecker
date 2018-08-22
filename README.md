@@ -12,6 +12,8 @@ NuGet package: https://www.nuget.org/packages/FiniteModelChecker/
 
 The assemblies distributed in the NuGet package are compiled against .NET Standard 1.0, which means your project must be using .NET Framework 4.5+ or .NET Core 1.0+ to reference them (see [here](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support) for more details).
 
+NuGet symbols package available from source https://nuget.smbsrc.net/
+
 ## Build & Test
 
 1. Install [.NET Core](https://www.microsoft.com/net/download)
@@ -19,6 +21,7 @@ The assemblies distributed in the NuGet package are compiled against .NET Standa
 3. To build, run `dotnet build` from the root of the repo
 4. To test, run `dotnet test` from the FiniteModelChecker.Tests directory
 5. To package, run `dotnet pack -c release`
+6. To push symbols package, run `dotnet nuget push FiniteModelChecker.version.symbols.nupkg -k apikey -s https://nuget.smbsrc.net/`
 
 ## Usage
 
